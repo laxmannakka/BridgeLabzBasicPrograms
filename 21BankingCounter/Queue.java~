@@ -1,0 +1,106 @@
+package com.bridgelabz.queue;
+import com.bridgelabz.node.Node;
+import java.util.Scanner;
+
+
+public class Queue<E>
+{
+    Scanner input = new Scanner (System.in);
+    static int cashBal =10000;
+    public  Node<E> front =new Node();
+    public static   int COUNT;
+    public void addAtFront(int data)
+    {
+        Node<E> temp =new Node();
+        temp.mcheck = data;
+        temp.mnext =null;
+        if(front == null)
+        {
+            front = temp;
+        }
+        else
+        {
+            Node<E> referance =front;
+            while(referance.mnext != null)
+            {
+                referance =referance.mnext;
+            }
+            referance.mnext=temp;
+        }
+        COUNT++;
+    }
+    public void deleteAtRear()
+    {
+        Node<E> front1 = new Node();
+        front1=front;
+        if(front == null)
+        {
+            System.out.println("Sorry Deque is Empty ");
+        }
+
+        else
+        {
+						front=front.mnext;
+
+        }
+        COUNT--;
+    }
+
+    public int size()
+    {
+        return COUNT;
+    }
+    public void doOpearations()
+    {
+
+        int count= size();
+
+        for(int i=0;i<count;i++)
+        {
+
+            if(front.mcheck == 1)
+            {
+                System.out.println("Enter How Much Money Do U Want Deposit ");
+                int money = input.nextInt();
+                cashBal += money;
+                System.out.println((i+1)+ "user Deposit Succesfully "+money);
+                deleteAtRear();
+
+            }
+            else if(front.mcheck == 2)
+            {
+                System.out.println("Enter How Much Money Do U Want Withdraw");
+                int money =input.nextInt();
+                if(money<cashBal)
+                {
+                    cashBal -= money;
+                    System.out.println((i+1)+ "user Withdrawn Succesfully " +money);
+                    deleteAtRear();
+                }
+                else
+                    System.out.println("Cash Counter Empty");
+            }
+        
+				else{
+									                System.out.println("I am in else");
+				}
+				}
+
+
+
+    }
+
+public void display(){
+	while(front!=null)
+	{
+		System.out.print(front.mcheck+"  ");
+break;
+	}
+}
+
+
+}
+
+
+
+
