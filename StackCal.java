@@ -22,6 +22,7 @@ class Stakecal
                 intFile += s;
             }
 
+        System.out.println();
 
         }
         }
