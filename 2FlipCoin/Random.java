@@ -1,3 +1,5 @@
+package com.bridgelabz.random;
+
 /* Program On Flip Coins
 * 1. Number of turns  get from user
 * 2. And we are Generating random Numbers.

@@ -20,10 +20,10 @@ import java.io.FileReader;
 
 
 // Creating the class
-class OrderedList
+class OrderedList<E>
 {
 
-    Node start;
+    Node <E> start;
     FileOperations obj = new FileOperations();
 
     // get data From a file
@@ -52,11 +52,11 @@ class OrderedList
 
 
     // add item Function 
-    void addItem(int data)
+    void addItem(Integer data)
     {
-        Node head =start;
-        Node temp =new Node();
-        temp.data =data;
+        Node<E>head = start;
+        Node<E>temp = new Node();
+        temp.data = (E) data;
         temp.next =null;
         if(start == null)
         {
@@ -76,7 +76,7 @@ class OrderedList
 		// Display Function
     void display()
     {
-        Node temp =start;
+        Node<E>temp =start;
         while( temp != null)
         {
             System.out.print(temp.data+"---->");
@@ -88,7 +88,7 @@ class OrderedList
     int size()
     {
         int count=0;
-        Node temp =start;
+        Node<E>temp =start;
         while( temp.next != null)
         {
             temp=temp.next;
@@ -101,7 +101,7 @@ class OrderedList
    // Serching of a Word Function
    void serchWord()
     {
-        Node temp = start;
+        Node<E>temp = start;
         int count=0;
         Scanner input =new Scanner(System.in);
         System.out.println("Enter a String to Search");
@@ -110,7 +110,7 @@ class OrderedList
         while(temp.next != null)
         {
             count++;
-            if( temp.data==s)
+            if( (Integer)temp.data == s)
             {
                 System.out.println(" String found At "+count);
                 flag++;
@@ -138,7 +138,7 @@ class OrderedList
     // removeWord From a Linked lIst
     void removeWord(int count)
     {
-        Node temp = start;
+        Node<E>temp = start;
         if(count==1)
         {
             start =start.next;
@@ -165,7 +165,7 @@ class OrderedList
 
     public static void main(String[] args)
     {
-        OrderedList obj = new OrderedList();
+        OrderedList<Integer> obj = new OrderedList();
         obj.getDataFromFile();
         obj.display();
 

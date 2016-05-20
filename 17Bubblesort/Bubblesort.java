@@ -1,4 +1,4 @@
-package com.bridgelabz.bubblesort;
+package com.bridgelabz.sortingsearch;
 /* 
  * Created By Bridgelabz on 3-4-2016
  * <p>

@@ -1,3 +1,4 @@
+package com.bridgelabz.powerof2;
 /* 
  * Created by Bridzelabz on 2-4-2016.
  * <p>

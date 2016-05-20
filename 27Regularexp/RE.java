@@ -29,6 +29,8 @@ class RE
 				Pattern r2=Pattern.compile(p3);
 				Matcher m2=r2.matcher(s1);
 				s1=m2.replaceAll(Cno);
+	
+
 				//System.out.println(s1);
 			
 				Date dateobj = new Date();

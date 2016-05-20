@@ -1,10 +1,11 @@
 package com.bridgelabz.node;
-public class Node
+public class Node<E>
 {
 //public String data;
-public int data;
-public Node next;
-    public Node(){
+public E data;
+public Node<E> next;
+    public Node()
+    {
         this.next=null;
         }
 }

@@ -9,10 +9,10 @@ package com.bridgelabz.unorderlist;
 import com.bridgelabz.filereader.FileOperations;
 import com.bridgelabz.node.Node;
 import java.util.Scanner;
-class UnorderdList
+class UnorderdList<E>
 {
 
-    Node start;
+    Node<E> start;
 
     FileOperations obj = new FileOperations();
 
@@ -43,9 +43,9 @@ class UnorderdList
 
     void addItem(String data)
     {
-        Node head =start;
-        Node temp =new Node();
-        temp.data =data;
+        Node<E> head =start;
+        Node<E> temp =new Node();
+        temp.data = (E) data;
         temp.next =null;
         if(start == null)
         {
@@ -65,7 +65,7 @@ class UnorderdList
 
     void display()
     {
-        Node temp =start;
+        Node<E> temp =start;
         while( temp != null)
         {
             System.out.print(temp.data+"---->");
@@ -77,7 +77,7 @@ class UnorderdList
     int size()
     {
         int count=0;
-        Node temp =start;
+        Node<E> temp =start;
         while( temp.next != null)
         {
             temp=temp.next;
@@ -89,7 +89,7 @@ class UnorderdList
 
     void serchWord()
     {
-        Node temp = start;
+        Node<E> temp = start;
         int count=0;
         Scanner input =new Scanner(System.in);
         System.out.println("Enter a String to Search");
@@ -125,7 +125,7 @@ class UnorderdList
 
     void removeWord(int count)
     {
-        Node temp = start;
+        Node<E> temp = start;
         for(int i=0;i<count-1;i++)
         {
             temp=temp.next;
@@ -145,7 +145,7 @@ class UnorderdList
 
     public static void main(String[] args)
     {
-        UnorderdList obj1 =new UnorderdList();
+        UnorderdList<String> obj1 =new UnorderdList();
         obj1.List();
         obj1.getDataFromFile();
        obj1.display();

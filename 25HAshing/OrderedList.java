@@ -104,7 +104,7 @@ public class OrderedList
         Node temp = start;
         int count=0;
         Scanner input =new Scanner(System.in);
-        System.out.println("Enter a String to Search");
+        System.out.println("Enter a pattern to Search");
         int s =input.nextInt();
         int flag=0;
         while(temp.next != null)

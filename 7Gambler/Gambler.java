@@ -1,3 +1,5 @@
+
+package com.bridgelabz.gambler;
 /*
 * Program on Gambler
 * taking Stake ,goal and NUmber of Trials by Command Line Arument

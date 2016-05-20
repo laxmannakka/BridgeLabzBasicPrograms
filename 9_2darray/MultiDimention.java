@@ -1,3 +1,4 @@
+package com.bridgelabz.arraytwodimensional;
 /*
  * Program Created By BridgeLabz
  *<p>
