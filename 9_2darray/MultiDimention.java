@@ -29,6 +29,7 @@ public class MultiDimention
     // definaation of integer Array
     void display(int row,int column, int[][] array)
     {
+        //   PrintWriter pw = new PrintWriter(System.out, true);
         for(int i=0;i<row;i++)
         {
             for(int j=0;j<column;j++)

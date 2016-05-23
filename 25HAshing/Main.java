@@ -15,6 +15,9 @@ class Main
         // Calling The Function Integer File Reader Function
         int[] retArray = object.integerFileReader();
         for(int i=0; i<retArray.length ; i++)
+
+
+
         {
             int rem = retArray[i] % 11;
             if(order[rem]== null)
@@ -44,8 +47,5 @@ class Main
         
 
 
-
-        
-    }
 
 }

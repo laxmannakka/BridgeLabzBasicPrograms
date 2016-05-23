@@ -162,10 +162,16 @@ class OrderedList<E>
 
 
 
+<<<<<<< HEAD
 // Main Function
     public static void main(String[] args)
     {
 	//Creating The Object
+=======
+
+    public static void main(String[] args)
+    {
+>>>>>>> 2dfe3dbad64cd76ea34418a3e30762ff64afe58f
         OrderedList<Integer> obj = new OrderedList();
         obj.getDataFromFile();
         obj.display();

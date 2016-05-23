@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io. BufferedReader;
 
+<<<<<<< HEAD
 
 public class FileOperations
 {
@@ -12,6 +13,12 @@ public class FileOperations
     int[] abc;    // Declaration of int array
 
 // Function for File Reader of A String
+=======
+public class FileOperations
+{
+    String[] arr;
+    int[] abc;
+>>>>>>> 2dfe3dbad64cd76ea34418a3e30762ff64afe58f
     public  String[] fileReader()
     {
         try
@@ -38,7 +45,10 @@ public class FileOperations
         return arr;
     }
 
+<<<<<<< HEAD
 	// Funcion for File Reaader For Integer
+=======
+>>>>>>> 2dfe3dbad64cd76ea34418a3e30762ff64afe58f
     public int[] integerFileReader()
     {
         try

@@ -1,4 +1,8 @@
+
 package com.bridgelabz.list;
+
+
+
 import com.bridgelabz.node.Node;
 import java.util.Scanner;
 
@@ -12,11 +16,19 @@ public class Queue<E>
 
 
     // function For Adding The Queue
+
     public void addAtFront(E data)
     {
         Node<E> temp = new Node();
         temp.data = (E) data;
         temp.next = null;
+
+
+
+
+
+
+
         if(front == null)
         {
             front =temp;
@@ -24,11 +36,19 @@ public class Queue<E>
         else
         {
             Node <E> temp1 = front;
+
             while(temp1.next != null)
             {
                 temp1=temp1.next;
             }
             temp1.next=temp;
+
+
+
+
+
+
+
 
         }
     }
@@ -46,7 +66,11 @@ public class Queue<E>
 
         else
         {
+
             front=front.next;
+
+
+
 
         }
         COUNT--;
@@ -70,7 +94,11 @@ public class Queue<E>
             System.out.println("Tranactions Going on");
 
 
+
             if((Integer)front.data == 1)
+
+
+
             {
                 System.out.println("Enter How Much Money Do U Want Deposit ");
                 int money = input.nextInt();
@@ -79,7 +107,11 @@ public class Queue<E>
                 deleteAtRear();
 
             }
+
             else if((Integer)front.data == 2)
+
+
+
             {
                 System.out.println("Enter How Much Money Do U Want Withdraw");
                 int money =input.nextInt();
@@ -111,7 +143,11 @@ public class Queue<E>
             while(front1!=null)
             {
                 System.out.print(front1.data+"  ");
+
                 front1 =front1.next;
+
+
+
             }
         }
     }
