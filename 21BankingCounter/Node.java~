@@ -1,0 +1,8 @@
+
+package com.bridgelabz.node;
+
+public class Node<E>
+{
+    public   int  mcheck;
+    public   Node<E> mnext;
+}
