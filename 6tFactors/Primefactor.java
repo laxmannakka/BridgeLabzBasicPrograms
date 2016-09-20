@@ -28,7 +28,7 @@ class Primefactor
             if(num%i==0)
             {   
                 // Calling  The Function Check_and_printPrimeFactor
-                Check_and_printPrimeFactor(i);
+                check_And_PrintPrimeFactor(i);
             }
         }
 
