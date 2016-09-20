@@ -16,7 +16,7 @@ import java.util.Scanner;
 class Primefactor
 {
     // FUnction for Calculating The Factors
-    public void Calculating_Factors(int num)
+    public void calculating_Factors(int num)
     {
         // Variavable i for Travrsing
         int i;
@@ -35,7 +35,7 @@ class Primefactor
 
 
     }
-    public void Check_and_printPrimeFactor(int factor)
+    public void check_And_PrintPrimeFactor(int factor)
     {
         // Declaration Of variables k and count length
         int k,count=0;
@@ -62,9 +62,9 @@ class Primefactor
         Primefactor obj = new Primefactor();
         System.out.println("Enter a Number to find Factors \n");
         Scanner in = new Scanner(System.in);
-        int N=in.nextInt();
+        int value=in.nextInt();
         // Calling The factors Funcion
-        obj.Calculating_Factors(N);
+        obj.Calculating_Factors(value);
 
 
     }
