@@ -1,7 +1,0 @@
-<<<<<<< HEAD
-58,89,65,90,56,90,66,67,56
-=======
-laxman is a good boy
-working in bridgelabn
-as a product develiopment Traniee
->>>>>>> 2dfe3dbad64cd76ea34418a3e30762ff64afe58f
